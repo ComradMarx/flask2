@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<style>
+    body {
+      margin-bottom: 500px; /* Add margin to the bottom of the body */
+    }
+</style>
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+
+
+
+
+
+
+
+<!-- CREATE H1 TAG*-->
+<!------------------------------------------------------------>
+ <div class="h1-container">
+    <h2>DESIGN SIDE 1 -- V3  </h2>
+  </div>
+<!------------------------------------------------------------>
+
+
+
+<!-- STYLE H1 TAG*-->
+<!------------------------------------------------------------>
+  <style>
+    .h1-container {
+      #border: 8px solid black;
+      #border-radius: 12px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      color: #363233;
+      margin-top: 10vh;
+      margin-bottom: -25vh;
+      font-family: Impact, sans-serif;
+      transform: translateY(-50%);
+      #background-color: #F3F3F3;
+      max-width: 50%;
+      max-height: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 50px; /* Adjust the font size as desired */
+    }
+
+  </style>
+
+
+
+<!--@ MOBILE STYLING -->
+<!------------------------------------------------------------>
+
+<style>
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+      .h1-container {
+        height: 180px;
+        font-size: 30px;
+        margin-top: 10vh;
+        white-space: nowrap;
+
+
+      }
+    }
+
+</style>
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+<!-- CREATE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
+
+  <div class="flex-container">
+    <div id="image-container">
+      <img id="logo" src="{{ url_for('static', filename='uploads/' + html_variable + '/1.png') }}" alt="transparent.png">
+
+      <img id="center" src="{{ url_for('static', filename='center_colors/white.png') }}" alt="Image 1">
+      <img id="front" src="{{ url_for('static', filename='front_colors/white.png') }}" alt="Image 2">
+      <img id="back" src="{{ url_for('static', filename='back_colors/white.png') }}" alt="Image 3">
+      <img id="strap" src="{{ url_for('static', filename='strap_colors/white.png') }}" alt="Image 4">
+    </div>
+  </div>
+</body>
+</html>
+<!------------------------------------------------------------>
+<!-- CREATE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+
+
+
+
+
+
+<!-- STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
+  <style>
+
+    /*flex container styles */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: top;
+    }
+
+
+    /* Styles for image container */
+    #image-container {
+      position: relative;
+      width: 800px;
+      height: 500px;
+    }
+
+    /* Styles for individual images */
+    #logo,
+    #center,
+    #front,
+    #back,
+    #strap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+
+<!--IMAGES / LAYERS POSIITONING-->
+
+    #logo {
+      z-index: 0;
+    }
+
+    #center {
+      z-index: -1;
+    }
+
+    #front{
+      z-index: -2;
+    }
+
+    #back{
+      z-index: -3;
+    }
+
+    #strap{
+      z-index: -4;
+    }
+
+  </style>
+<!-- STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+<!--STYLE [FLEX CONTAINER]  [IMAGE CONTAINER], AND [IMAGES]-->
+<!--@ MOBILE STYLING -->
+<!------------------------------------------------------------>
+
+<style>
+  /* Mobile styles */
+  @media only screen and (max-width: 500px) {
+    .flex-container {
+      align-items: center;
+      margin-top: 10px;
+
+    }
+
+    #image-container {
+      width: 100%;
+      height: 180px;
+      padding: 10px;
+    }
+
+    .image-container img {
+      display: block;
+      height: 180px;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px;
+      margin-bottom: 20px;
+
+    }
+  }
+</style>
+
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- READ IN THE COLOR PALLET IMAGE-->
+<!------------------------------------------------------------>
+<div class="image-container2">
+  <div class="label">COLOR OPTIONS</div>
+  <img src="{{ url_for('static', filename='images/color_pallet_2.png') }}" alt="My Image" class="bordered-image">
+</div>
+<!------------------------------------------------------------>
+
+
+
+
+<!-- Style the COLOR PALLET IMAGE -- NORMAL -->
+<!------------------------------------------------------------>
+<style>
+.image-container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.label {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #363233;
+  font-size: 14px;
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  text-align: top;
+  font-size: 40px;
+
+}
+
+
+
+.bordered-image {
+  width: 550px;
+  margin-bottom: 0;
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: #F3F3F3;
+  border: 8px solid black;
+  padding: 0;
+  -webkit-appearance: none;
+  font-size: 35px;
+  border-radius: 12px;
+  -moz-appearance: none;
+}
+</style>
+
+<!-- Style the COLOR PALLET IMAGE -- NORMAL -->
+<!------------------------------------------------------------>
+
+
+
+
+
+
+<!-- Style the COLOR PALLET IMAGE @ MOBILE! -->
+<!------------------------------------------------------------>
+
+
+<style>
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+
+
+      .image-container2 {
+        margin-top: 60px;
+
+
+
+      }
+
+      .bordered-image {
+        width: 350px;
+        border: 8px solid black;
+        top
+
+      }
+
+
+      .label {
+      white-space: nowrap;
+
+      }
+
+
+    }
+</style>
+
+<!-- Style the COLOR PALLET IMAGE @ MOBILE! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form method="post" >
+
+
+    <div class="form-group">
+        <label for="logo-select">LOGO SIZE:</label>
+        <div class="dropdown-container">
+            <select id="logo-select" name="logo-select" class="dropdown">
+                <option value="0">Logo Size 0</option>
+                <option value="1">Logo Size 1</option>
+                <option value="2">Logo Size 2</option>
+                <option value="3">Logo Size 3</option>
+                <option value="4">Logo Size 4</option>
+                <option value="5">Logo Size 5</option>
+                <option value="6">Logo Size 6</option>
+                <option value="7">Logo Size 7</option>
+                <option value="8">Logo Size 8</option>
+                <option value="9">Logo Size 9</option>
+            </select>
+         </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div class="form-group">
+        <label for="front-select">FRONT COLOR:</label>
+        <div class="dropdown-container">
+            <select id="front-select" name="front-select" class="dropdown">
+
+        <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+        <option value="banana" style="color: #F7E9C4;">BANANA</option> #new_goal  
+        <option value="bay" style="color: #7D98A9;">BAY</option> #new_goal  
+        <option value="berry" style="color: #8E5870;">BERRY</option> #new_goal  
+        <option value="black" style="color: #363233;">BLACK</option> #new_goal  
+        <option value="blossom" style="color: #FEC8E0;">BLOSSOM</option> #new_goal  
+        <option value="blue_jean" style="color: #5C728A;">BLUE JEAN</option> #new_goal  
+        <option value="blue_spruce" style="color: #457278;">BLUE SPRUCE</option> #new_goal  
+        <option value="brick" style="color: #A2424E;">BRICK</option> #new_goal  
+        <option value="bright_salmon" style="color: #EE6E61;">BRIGHT SALMON</option> #new_goal  
+        <option value="burnt_orange" style="color: #EA7639;">BURNT ORANGE</option> #new_goal  
+        <option value="butter" style="color: #F9D790;">BUTTER</option> #new_goal  
+        <option value="celedon" style="color: #B8C37F;">CELEDON</option> #new_goal  
+        <option value="celery" style="color: #C4DFB6;">CELERY</option> #new_goal  
+        <option value="chambray" style="color: #BEDCE7;">CHAMBRAY</option> #new_goal  
+        <option value="chili" style="color: #455D77;">CHILI</option> #new_goal  
+        <option value="chili_pepper" style="color: #9D3246;">CHILI PEPPER</option> #new_goal  
+        <option value="china_blue" style="color: #32425C;">CHINA BLUE</option> #new_goal  
+        <option value="chocolate" style="color: #3B2E25;">CHOCOLATE</option> #new_goal  
+        <option value="citrus" style="color: #FEC657;">CITRUS</option> #new_goal  
+        <option value="crimson" style="color: #6B292D;">CRIMSON</option> #new_goal  
+        <option value="crunchberry" style="color: #EF6C98;">CRUNCHBERRY</option> #new_goal  
+        <option value="cumin" style="color: #B65159;">CUMIN</option> #new_goal  
+        <option value="denim" style="color: #2C3848;">DENIM</option> #new_goal  
+        <option value="emerald" style="color: #426770;">EMERALD</option> #new_goal  
+        <option value="flo_blue" style="color: #6882B3;">FLO BLUE</option> #new_goal  
+        <option value="granite" style="color: #777C80;">GRANITE</option> #new_goal  
+        <option value="grape" style="color: #535089;">GRAPE</option> #new_goal  
+        <option value="graphite" style="color: #3A353B;">GRAPHITE</option> #new_goal  
+        <option value="grass" style="color: #037C5D;">GRASS</option> #new_goal  
+        <option value="grey" style="color: #86817D;">GREY</option> #new_goal  
+        <option value="hemp" style="color: #45402D;">HEMP</option> #new_goal  
+        <option value="ice_blue" style="color: #8293A7;">ICE BLUE</option> #new_goal  
+        <option value="ivory" style="color: #F6EADA;">IVORY</option> #new_goal  
+        <option value="khaki" style="color: #B29881;">KHAKI</option> #new_goal  
+        <option value="kiwi" style="color: #BAD473;">KIWI</option> #new_goal  
+        <option value="lagoon_blue" style="color: #66CEE9;">LAGOON BLUE</option> #new_goal  
+        <option value="light_green" style="color: #69897E;">LIGHT GREEN</option> #new_goal  
+        <option value="lime" style="color: #8FC567;">LIME</option> #new_goal  
+        <option value="mango" style="color: #F78E55;">MANGO</option> #new_goal  
+        <option value="melon" style="color: #F69159;">MELON</option> #new_goal  
+        <option value="midnight" style="color: #313854;">MIDNIGHT</option> #new_goal  
+        <option value="moss" style="color: #6C765E;">MOSS</option> #new_goal  
+        <option value="mustard" style="color: #C18D41;">MUSTARD</option> #new_goal  
+        <option value="neon_blue" style="color: #5170B1;">NEON BLUE</option> #new_goal  
+        <option value="neon_green" style="color: #4DB866;">NEON GREEN</option> #new_goal  
+        <option value="neon_pink" style="color: #EA639B;">NEON PINK</option> #new_goal  
+        <option value="neon_red_orange" style="color: #F87F88;">NEON RED ORANGE</option> #new_goal  
+        <option value="neon_yellow" style="color: #FAD36A;">NEON YELLOW</option> #new_goal  
+        <option value="paprika" style="color: #D53C50;">PAPRIKA</option> #new_goal  
+        <option value="peony" style="color: #E97991;">PEONY</option> #new_goal  
+        <option value="pepper" style="color: #5D5854;">PEPPER</option> #new_goal  
+        <option value="periwinkle" style="color: #5665A8;">PERIWINKLE</option> #new_goal  
+        <option value="purple" style="color: #50538A;">PURPLE</option> #new_goal  
+        <option value="red" style="color: #C5343B;">RED</option> #new_goal  
+        <option value="royal_caribe" style="color: #4180B3;">ROYAL CARIBE</option> #new_goal  
+        <option value="sage" style="color: #787B6A;">SAGE</option> #new_goal  
+        <option value="sandstone" style="color: #C1B4A4;">SANDSTONE</option> #new_goal  
+        <option value="sapphire" style="color: #0084B4;">SAPPHIRE</option> #new_goal  
+        <option value="sea" style="color: #479B9B;">SEA</option> #new_goal  
+        <option value="seafoam" style="color: #5A9A9A;">SEAFOAM</option> #new_goal  
+        <option value="true_navy" style="color: #455D77;">TRUE NAVY</option> #new_goal  
+        <option value="violet" style="color: #786FA6;">VIOLET</option> #new_goal  
+        <option value="washed_denim" style="color: #464D60;">WASHED DENIM</option> #new_goal  
+        <option value="watermelon" style="color: #F17F7F;">WATERMELON</option> #new_goal  
+        <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+        <option value="willow" style="color: #4D544C;">WILLOW</option> #new_goal  
+        <option value="yam" style="color: #B5633E;">YAM</option> #new_goal 
+            </select>
+        </div>
+    </div>
+
+
+
+
+    <br><br>
+
+
+
+    <div class="form-group">
+      <label for="center-select">MIDDLE  COLOR</label>
+      <div class="dropdown-container">
+        <select id="center-select" name="center-select" class="dropdown">
+
+            <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+            <option value="banana" style="color: #F7E9C4;">BANANA</option> #new_goal  
+            <option value="bay" style="color: #7D98A9;">BAY</option> #new_goal  
+            <option value="berry" style="color: #8E5870;">BERRY</option> #new_goal  
+            <option value="black" style="color: #363233;">BLACK</option> #new_goal  
+            <option value="blossom" style="color: #FEC8E0;">BLOSSOM</option> #new_goal  
+            <option value="blue_jean" style="color: #5C728A;">BLUE JEAN</option> #new_goal  
+            <option value="blue_spruce" style="color: #457278;">BLUE SPRUCE</option> #new_goal  
+            <option value="brick" style="color: #A2424E;">BRICK</option> #new_goal  
+            <option value="bright_salmon" style="color: #EE6E61;">BRIGHT SALMON</option> #new_goal  
+            <option value="burnt_orange" style="color: #EA7639;">BURNT ORANGE</option> #new_goal  
+            <option value="butter" style="color: #F9D790;">BUTTER</option> #new_goal  
+            <option value="celedon" style="color: #B8C37F;">CELEDON</option> #new_goal  
+            <option value="celery" style="color: #C4DFB6;">CELERY</option> #new_goal  
+            <option value="chambray" style="color: #BEDCE7;">CHAMBRAY</option> #new_goal  
+            <option value="chili" style="color: #455D77;">CHILI</option> #new_goal  
+            <option value="chili_pepper" style="color: #9D3246;">CHILI PEPPER</option> #new_goal  
+            <option value="china_blue" style="color: #32425C;">CHINA BLUE</option> #new_goal  
+            <option value="chocolate" style="color: #3B2E25;">CHOCOLATE</option> #new_goal  
+            <option value="citrus" style="color: #FEC657;">CITRUS</option> #new_goal  
+            <option value="crimson" style="color: #6B292D;">CRIMSON</option> #new_goal  
+            <option value="crunchberry" style="color: #EF6C98;">CRUNCHBERRY</option> #new_goal  
+            <option value="cumin" style="color: #B65159;">CUMIN</option> #new_goal  
+            <option value="denim" style="color: #2C3848;">DENIM</option> #new_goal  
+            <option value="emerald" style="color: #426770;">EMERALD</option> #new_goal  
+            <option value="flo_blue" style="color: #6882B3;">FLO BLUE</option> #new_goal  
+            <option value="granite" style="color: #777C80;">GRANITE</option> #new_goal  
+            <option value="grape" style="color: #535089;">GRAPE</option> #new_goal  
+            <option value="graphite" style="color: #3A353B;">GRAPHITE</option> #new_goal  
+            <option value="grass" style="color: #037C5D;">GRASS</option> #new_goal  
+            <option value="grey" style="color: #86817D;">GREY</option> #new_goal  
+            <option value="hemp" style="color: #45402D;">HEMP</option> #new_goal  
+            <option value="ice_blue" style="color: #8293A7;">ICE BLUE</option> #new_goal  
+            <option value="ivory" style="color: #F6EADA;">IVORY</option> #new_goal  
+            <option value="khaki" style="color: #B29881;">KHAKI</option> #new_goal  
+            <option value="kiwi" style="color: #BAD473;">KIWI</option> #new_goal  
+            <option value="lagoon_blue" style="color: #66CEE9;">LAGOON BLUE</option> #new_goal  
+            <option value="light_green" style="color: #69897E;">LIGHT GREEN</option> #new_goal  
+            <option value="lime" style="color: #8FC567;">LIME</option> #new_goal  
+            <option value="mango" style="color: #F78E55;">MANGO</option> #new_goal  
+            <option value="melon" style="color: #F69159;">MELON</option> #new_goal  
+            <option value="midnight" style="color: #313854;">MIDNIGHT</option> #new_goal  
+            <option value="moss" style="color: #6C765E;">MOSS</option> #new_goal  
+            <option value="mustard" style="color: #C18D41;">MUSTARD</option> #new_goal  
+            <option value="neon_blue" style="color: #5170B1;">NEON BLUE</option> #new_goal  
+            <option value="neon_green" style="color: #4DB866;">NEON GREEN</option> #new_goal  
+            <option value="neon_pink" style="color: #EA639B;">NEON PINK</option> #new_goal  
+            <option value="neon_red_orange" style="color: #F87F88;">NEON RED ORANGE</option> #new_goal  
+            <option value="neon_yellow" style="color: #FAD36A;">NEON YELLOW</option> #new_goal  
+            <option value="paprika" style="color: #D53C50;">PAPRIKA</option> #new_goal  
+            <option value="peony" style="color: #E97991;">PEONY</option> #new_goal  
+            <option value="pepper" style="color: #5D5854;">PEPPER</option> #new_goal  
+            <option value="periwinkle" style="color: #5665A8;">PERIWINKLE</option> #new_goal  
+            <option value="purple" style="color: #50538A;">PURPLE</option> #new_goal  
+            <option value="red" style="color: #C5343B;">RED</option> #new_goal  
+            <option value="royal_caribe" style="color: #4180B3;">ROYAL CARIBE</option> #new_goal  
+            <option value="sage" style="color: #787B6A;">SAGE</option> #new_goal  
+            <option value="sandstone" style="color: #C1B4A4;">SANDSTONE</option> #new_goal  
+            <option value="sapphire" style="color: #0084B4;">SAPPHIRE</option> #new_goal  
+            <option value="sea" style="color: #479B9B;">SEA</option> #new_goal  
+            <option value="seafoam" style="color: #5A9A9A;">SEAFOAM</option> #new_goal  
+            <option value="true_navy" style="color: #455D77;">TRUE NAVY</option> #new_goal  
+            <option value="violet" style="color: #786FA6;">VIOLET</option> #new_goal  
+            <option value="washed_denim" style="color: #464D60;">WASHED DENIM</option> #new_goal  
+            <option value="watermelon" style="color: #F17F7F;">WATERMELON</option> #new_goal  
+            <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+            <option value="willow" style="color: #4D544C;">WILLOW</option> #new_goal  
+            <option value="yam" style="color: #B5633E;">YAM</option> #new_goal 
+        </select>
+    </div>
+</div>
+
+
+
+
+
+      <br><br>
+
+
+
+
+
+
+
+    <div class="form-group">
+      <label for="back-select">BACK  COLOR</label>
+      <div class="dropdown-container">
+        <select id="back-select" name="back-select" class="dropdown">
+
+            <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+            <option value="banana" style="color: #F7E9C4;">BANANA</option> #new_goal  
+            <option value="bay" style="color: #7D98A9;">BAY</option> #new_goal  
+            <option value="berry" style="color: #8E5870;">BERRY</option> #new_goal  
+            <option value="black" style="color: #363233;">BLACK</option> #new_goal  
+            <option value="blossom" style="color: #FEC8E0;">BLOSSOM</option> #new_goal  
+            <option value="blue_jean" style="color: #5C728A;">BLUE JEAN</option> #new_goal  
+            <option value="blue_spruce" style="color: #457278;">BLUE SPRUCE</option> #new_goal  
+            <option value="brick" style="color: #A2424E;">BRICK</option> #new_goal  
+            <option value="bright_salmon" style="color: #EE6E61;">BRIGHT SALMON</option> #new_goal  
+            <option value="burnt_orange" style="color: #EA7639;">BURNT ORANGE</option> #new_goal  
+            <option value="butter" style="color: #F9D790;">BUTTER</option> #new_goal  
+            <option value="celedon" style="color: #B8C37F;">CELEDON</option> #new_goal  
+            <option value="celery" style="color: #C4DFB6;">CELERY</option> #new_goal  
+            <option value="chambray" style="color: #BEDCE7;">CHAMBRAY</option> #new_goal  
+            <option value="chili" style="color: #455D77;">CHILI</option> #new_goal  
+            <option value="chili_pepper" style="color: #9D3246;">CHILI PEPPER</option> #new_goal  
+            <option value="china_blue" style="color: #32425C;">CHINA BLUE</option> #new_goal  
+            <option value="chocolate" style="color: #3B2E25;">CHOCOLATE</option> #new_goal  
+            <option value="citrus" style="color: #FEC657;">CITRUS</option> #new_goal  
+            <option value="crimson" style="color: #6B292D;">CRIMSON</option> #new_goal  
+            <option value="crunchberry" style="color: #EF6C98;">CRUNCHBERRY</option> #new_goal  
+            <option value="cumin" style="color: #B65159;">CUMIN</option> #new_goal  
+            <option value="denim" style="color: #2C3848;">DENIM</option> #new_goal  
+            <option value="emerald" style="color: #426770;">EMERALD</option> #new_goal  
+            <option value="flo_blue" style="color: #6882B3;">FLO BLUE</option> #new_goal  
+            <option value="granite" style="color: #777C80;">GRANITE</option> #new_goal  
+            <option value="grape" style="color: #535089;">GRAPE</option> #new_goal  
+            <option value="graphite" style="color: #3A353B;">GRAPHITE</option> #new_goal  
+            <option value="grass" style="color: #037C5D;">GRASS</option> #new_goal  
+            <option value="grey" style="color: #86817D;">GREY</option> #new_goal  
+            <option value="hemp" style="color: #45402D;">HEMP</option> #new_goal  
+            <option value="ice_blue" style="color: #8293A7;">ICE BLUE</option> #new_goal  
+            <option value="ivory" style="color: #F6EADA;">IVORY</option> #new_goal  
+            <option value="khaki" style="color: #B29881;">KHAKI</option> #new_goal  
+            <option value="kiwi" style="color: #BAD473;">KIWI</option> #new_goal  
+            <option value="lagoon_blue" style="color: #66CEE9;">LAGOON BLUE</option> #new_goal  
+            <option value="light_green" style="color: #69897E;">LIGHT GREEN</option> #new_goal  
+            <option value="lime" style="color: #8FC567;">LIME</option> #new_goal  
+            <option value="mango" style="color: #F78E55;">MANGO</option> #new_goal  
+            <option value="melon" style="color: #F69159;">MELON</option> #new_goal  
+            <option value="midnight" style="color: #313854;">MIDNIGHT</option> #new_goal  
+            <option value="moss" style="color: #6C765E;">MOSS</option> #new_goal  
+            <option value="mustard" style="color: #C18D41;">MUSTARD</option> #new_goal  
+            <option value="neon_blue" style="color: #5170B1;">NEON BLUE</option> #new_goal  
+            <option value="neon_green" style="color: #4DB866;">NEON GREEN</option> #new_goal  
+            <option value="neon_pink" style="color: #EA639B;">NEON PINK</option> #new_goal  
+            <option value="neon_red_orange" style="color: #F87F88;">NEON RED ORANGE</option> #new_goal  
+            <option value="neon_yellow" style="color: #FAD36A;">NEON YELLOW</option> #new_goal  
+            <option value="paprika" style="color: #D53C50;">PAPRIKA</option> #new_goal  
+            <option value="peony" style="color: #E97991;">PEONY</option> #new_goal  
+            <option value="pepper" style="color: #5D5854;">PEPPER</option> #new_goal  
+            <option value="periwinkle" style="color: #5665A8;">PERIWINKLE</option> #new_goal  
+            <option value="purple" style="color: #50538A;">PURPLE</option> #new_goal  
+            <option value="red" style="color: #C5343B;">RED</option> #new_goal  
+            <option value="royal_caribe" style="color: #4180B3;">ROYAL CARIBE</option> #new_goal  
+            <option value="sage" style="color: #787B6A;">SAGE</option> #new_goal  
+            <option value="sandstone" style="color: #C1B4A4;">SANDSTONE</option> #new_goal  
+            <option value="sapphire" style="color: #0084B4;">SAPPHIRE</option> #new_goal  
+            <option value="sea" style="color: #479B9B;">SEA</option> #new_goal  
+            <option value="seafoam" style="color: #5A9A9A;">SEAFOAM</option> #new_goal  
+            <option value="true_navy" style="color: #455D77;">TRUE NAVY</option> #new_goal  
+            <option value="violet" style="color: #786FA6;">VIOLET</option> #new_goal  
+            <option value="washed_denim" style="color: #464D60;">WASHED DENIM</option> #new_goal  
+            <option value="watermelon" style="color: #F17F7F;">WATERMELON</option> #new_goal  
+            <option value="white" style="color: #F3F3F3;">WHITE</option> #new_goal  
+            <option value="willow" style="color: #4D544C;">WILLOW</option> #new_goal  
+            <option value="yam" style="color: #B5633E;">YAM</option> #new_goal 
+        </select>
+     </div>
+    </div>
+
+
+
+
+
+      <br><br>
+
+
+
+
+
+
+    <br><br>
+
+
+
+
+    <div class="form-group">
+        <div class="dropdown-container">
+            <input type="submit" name="form2-submit" value="Submit">
+        </div>
+    </div>
+
+
+    
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------- STYLE FORMGROUP NORMAL    ------->
+<!------------------------------------------------------------>
+
+<style>
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  .form-group label {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #363233;
+    font-size: 40px;
+    margin-bottom: 20;
+  }
+
+  /* Custom select dropdown style */
+  .dropdown {
+    position: relative;
+    width: 550px;
+    height: 120px;
+    margin-bottom: 0;
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    background-color: #F3F3F3;
+    border: 8px solid black;
+    padding: 0;
+    -webkit-appearance: none;
+    font-size: 35px;
+    border-radius: 12px;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+  }
+</style>
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+<!-----------STYLE FORM GROUP @ MOBILE----------------->
+<!------------------------------------------------------------>
+<style>
+  @media only screen and (max-width: 450px) {
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      margin-top: 55px;
+    }
+
+    .form-group label {
+      font-family: Impact, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      color: #363233;
+      font-size: 35px;
+      margin-bottom: 20;
+    }
+
+    /* Custom select dropdown style */
+    .dropdown {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      text-align: center; /* Center text horizontally */
+      position: relative;
+      width: 350px;
+      height: 85px;
+      margin-bottom: 10;
+      font-family: Impact, sans-serif;
+      font-weight: bold;
+      color: #363233;
+      font-size: 30px;
+      background-color: #F3F3F3;
+      border: 8px solid black;
+      padding: 0;
+      -webkit-appearance: none;
+      font-size: 30px;
+      border-radius: 12px;
+      -moz-appearance: none;
+      appearance: none;
+      overflow: hidden; /* Hide the overflowing text */
+      white-space: nowrap; /* Prevent text wrapping */
+      text-overflow: ellipsis; /* Show an ellipsis (...) if the text exceeds the width */
+    }
+  }
+</style>
+
+<!------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------->
+
+<script>
+  // Get the necessary elements
+  var front = document.getElementById('front');
+  var logo = document.getElementById('logo');
+  var back = document.getElementById('back');
+  var center = document.getElementById('center');
+  var strap = document.getElementById('strap');
+
+
+
+
+  var frontSelect = document.getElementById('front-select');
+  var logoSelect = document.getElementById('logo-select');
+  var backSelect = document.getElementById('back-select');
+  var centerSelect = document.getElementById('center-select');
+  var strapSelect = document.getElementById('strap-select');
+
+
+
+  // Add event listeners to the select elements
+  frontSelect.addEventListener('change', updateImages);
+  logoSelect.addEventListener('change', updateImages);
+  backSelect.addEventListener('change', updateImages);
+  centerSelect.addEventListener('change', updateImages);
+  strapSelect.addEventListener('change', updateImages);
+
+
+
+  // Function to update the images and log the selected names
+  function updateImages() {
+    var selectedFrontName = frontSelect.options[frontSelect.selectedIndex].text;
+    var selectedLogoName = logoSelect.options[logoSelect.selectedIndex].text;
+    var selectedBackName = backSelect.options[backSelect.selectedIndex].text;
+    var selectedCenterName = centerSelect.options[centerSelect.selectedIndex].text;
+    var selectedStrapName = centerSelect.options[centerSelect.selectedIndex].text;
+
+
+
+    // Update the src attribute of the images
+    front.src = '{{ url_for("static", filename="front_colors/") }}' + frontSelect.value + '.png';
+    logo.src = "{{ url_for('static', filename='uploads/' + html_variable + '/') }}" + logoSelect.value + ".png";
+
+
+
+
+    back.src = '{{ url_for("static", filename="back_colors/") }}' + backSelect.value + '.png';
+    center.src = '{{ url_for("static", filename="center_colors/") }}' + centerSelect.value + '.png';
+    strap.src = '{{ url_for("static", filename="strap_colors/") }}' + centerSelect.value + '.png';
+
+
+
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
